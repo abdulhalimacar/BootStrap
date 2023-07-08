@@ -1,0 +1,35 @@
+/*
+<p class="h1 text-danger">TYPEOF</p> p'ye biz dedik ki h1 gibi davran
+
+<h1 class=" display-1 text-center text-success bg-dark">Bootstrap</h1> display-1 yaparak yazının boyutunu değiştirdik
+
+<p class="fs-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, laboriosam?</p> fs-1 yaparak daha da büyüttük... fs: font size dan gelir 
+
+bizim css linki bootstrap linkinin altında olması lazım bootstrap stili ezmek için 
+
+
+text-center,text-end seçenekleri vardır
+
+text-muted>hafif solgunluk yapar
+lead da var(<p>Lorem, ipsum dolor sit amet consectetur <span class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam!</span> adipisicing elit. Animi, ex!</p>)bu örnekte leadin ne yaptığı daha iyi anlaşılır
+
+fw-bold
+fw-bolder
+fw-semibold
+
+text-decoration-none
+text-decoration-underline
+text-decoration-linethrough
+
+satırlar arası mesafe: ln-1 veya ln-lg 
+
+text-capitalize
+text-uppercase 
+
+
+
+
+
+
+
+*/
