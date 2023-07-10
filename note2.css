@@ -1,0 +1,10 @@
+/*
+border border-dark border-5: border olsun border dark olsun ve kalınlığı 5 olsun yani en kalın olsun 
+bg-danger bg-gradient: bg danger olsun ama gradient olsun
+m-4 p-3: margin 4 birim olsun, padding 3 birim olsun :her taraftan 4 ve 3 birim verdik
+
+w-50: sayfanın yarısını kaplasın dedik
+herhangi bir divi veya bir şeyi ortalamak margin ile yapılabilir: y ekseninde 4 birim ve x ekseninde auto dersek ortalarız:my-4 ve mx-auto demeliyiz...
+bir div in içerisindeki yazıyı text-center ile ortalayabiliriz...
+
+*/
