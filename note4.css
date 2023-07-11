@@ -1,0 +1,25 @@
+/*
+
+
+
+
+ekstra smallda alt alta dizilsinler
+smallda 2 tane paylaşsınlar
+mediumda 3 tane olsun
+normal büyükte ekranda hepsi olsun
+
+col-6 yazılırsa bil ki bu xs ekranlar içindir
+col-sm-6 small ekranlar için 
+col-md-6 orta ekranlar için
+col-lg-2 büyük ekranlar için
+
+d-sm-none>küçük ekranlarda gözükme demektir bu>böyle bırakırsak sadece küçük ekranlarda gözükür 
+
+bg-info d-none>bu xsmallda gözükme demektir eğer şunu eklemezsek hiç gözükmez!
+bg-info d-sm-block/inline-block/flex/grid
+bg-warning d-md-block:sadece middle da gözükür!!! 
+d-none d-md-block d-lg-none: çok küçük ekranlarda gözükme,middle ekranlarda gözük ve çok büyük ekranlarda da gözükme demektir bu
+
+
+
+*/
