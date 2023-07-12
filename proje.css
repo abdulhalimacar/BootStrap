@@ -1,0 +1,125 @@
+/*
+
+eğer bootstrap ile birlikte css dosyası kullanacaksak ve bazen bootstrap kodlarını ezmemiz gerekecekse bizim css linkini bootstrap linkinin altına koymamız lazım!
+
+*/
+
+/*
+
+navbar-dark: yazıyı beyaz hale getirir yazıyı 
+navbar-light: siyah hale getirir yazıyı
+
+kendimiz özel renk vermek istersek style ile verebiliriz:<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: purple;">
+
+navbar-expand-lg: büyük ekranlarda büyü demektir 
+
+
+bu class açılabilir kapanabilir 
+
+
+İD'Sİ about olan yere git demektir bu: href="#about" 
+
+sola dayar bu: me-auto
+
+sağdan marjin ver: me-3
+
+ne demek bu kod:carousel-caption d-none d-md-block: başta gözükme ama md ekrana gelince gözük demektir bu
+
+margin top:mt-3
+margin bottom: mb-3
+
+en küçük ekranlarda 12 birim kapla demektir bu: col-12
+
+*/
+
+:root{
+    --red: #dc3545;
+}
+
+
+.navbar {
+
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.navbar .nav-link{
+
+    color: black;
+    transition: color 1s;
+}
+
+.navbar a:hover{
+    color: var(--red);
+}
+
+
+/* <!-- CAROUSEL --> */
+
+.carousel-item img{
+
+    height: 500px;
+    object-fit: cover;
+    max-height: calc(100vh-91px);
+
+    /* height: auto ;
+    width: 100%; */
+}
+
+.carousel-item h5{
+
+    color: var(--red);
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 2px white;
+}
+
+.carousel-item p{
+
+    color: white;
+    font-weight: 600;
+}
+
+.carousel-item .btn{
+
+    width: 7rem;
+    margin-bottom: 1rem;
+}
+
+.carousel-indicators button{
+
+    /* color: var(--red); */ /*böyle yaparsak kırmızı renk gelmez important ile yapmamız gerekir*/
+    background-color: var(--red) !important;
+    height: 1rem !important; /*kalınlığı kullandık burada*/
+    width: 3rem !important;
+    margin-right: 0.5rem !important;/*aralarına boşluk verdik*/
+}
+
+
+
+/*INSTRUCTORS*/
+
+#Instructors .card{
+
+    transition: transform 0.5s;
+}
+
+#Instructors .card:hover{
+
+    transform: scale(1.05);
+
+}
+
+#Instructors .socials i{
+
+    transition: opacity 0.5s;
+
+}
+
+
+#Instructors .socials i:hover{
+
+    opacity:0.5;
+    
+}
