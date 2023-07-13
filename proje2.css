@@ -1,0 +1,213 @@
+/*
+
+eğer bootstrap ile birlikte css dosyası kullanacaksak ve bazen bootstrap kodlarını ezmemiz gerekecekse bizim css linkini bootstrap linkinin altına koymamız lazım!
+
+*/
+
+/*
+
+navbar-dark: yazıyı beyaz hale getirir yazıyı 
+navbar-light: siyah hale getirir yazıyı
+
+kendimiz özel renk vermek istersek style ile verebiliriz:<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: purple;">
+
+navbar-expand-lg: büyük ekranlarda büyü demektir 
+
+
+bu class açılabilir kapanabilir 
+
+
+İD'Sİ about olan yere git demektir bu: href="#about" 
+
+sola dayar bu: me-auto
+
+sağdan marjin ver: me-3
+
+ne demek bu kod:carousel-caption d-none d-md-block: başta gözükme ama md ekrana gelince gözük demektir bu
+
+margin top:mt-3
+margin bottom: mb-3
+
+en küçük ekranlarda 12 birim kapla demektir bu: col-12
+
+class="container": sağdan soldan boşluk bıraktırıyor
+
+class:"row";kendi içerisinde flex özelliği barındırır o yüzden direkt olarak align-items-center verilebilir 
+
+datatbase targetın aşağıda yer alan idlerle aynı olması gerekir 
+
+class:img-fluid klasına bak>bu resimler içinde kullanılır dikkat! 
+
+i ile ikon veriririz
+a ile link veriririz 
+
+ <a href="tel:+905388802790">+905388802790</a>: hrefin içerisine noyu verdik ki arama aktif olsun yapmasakta olurdu
+
+ formlarda id ile for un aynı isme sahip olması lazım bağlantı kurmak için...
+
+ class:col-12>12 olarak başla ve hep böyle devame et demektir bu...
+
+ class: col-md-6>>>12 olarak başla ve md ye gelince 6 ol daha sonra ise sürekli olarak 6 olarak devam et demektir..
+
+ butonun genişliğini şöyle yapabiliriz:<button type="submit" class="btn btn-danger w-7">Submit</button>
+ btn-lg kalınlaştırır...
+
+ article tıpkı div gibi bir taşıyıcıdır div yerine articel da kullanılabilir...
+
+
+*/
+
+:root{
+    --red: #dc3545;
+}
+
+
+.navbar {
+
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.navbar .nav-link{
+
+    color: black;
+    transition: color 1s;
+}
+
+.navbar a:hover{
+    color: var(--red);
+}
+
+
+/* <!-- CAROUSEL --> */
+
+.carousel-item img{
+
+    height: 500px;
+    object-fit: cover;
+    max-height: calc(100vh-91px);
+
+    /* height: auto ;
+    width: 100%; */
+}
+
+.carousel-item h5{
+
+    color: var(--red);
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 2px white;
+}
+
+.carousel-item p{
+
+    color: white;
+    font-weight: 600;
+}
+
+.carousel-item .btn{
+
+    width: 7rem;
+    margin-bottom: 1rem;
+}
+
+.carousel-indicators button{
+
+    /* color: var(--red); */ /*böyle yaparsak kırmızı renk gelmez important ile yapmamız gerekir*/
+    background-color: var(--red) !important;
+    height: 1rem !important; /*kalınlığı kullandık burada*/
+    width: 3rem !important;
+    margin-right: 0.5rem !important;/*aralarına boşluk verdik*/
+}
+
+
+
+/*INSTRUCTORS*/
+
+#Instructors .card{
+
+    transition: transform 0.5s;
+}
+
+#Instructors .card:hover{
+
+    transform: scale(1.05);
+
+}
+
+#Instructors .socials i{
+
+    transition: opacity 0.5s;
+
+}
+
+
+#Instructors .socials i:hover{
+
+    opacity:0.5;
+    
+}
+
+/*STUDENTS*/
+
+
+
+section#students img{/*id si students olan sectiona git dedik*/
+
+    max-width: 500px;
+    min-width: 250px;
+}
+
+
+/* section#Courses .nav-link.active{
+    background-color: var(--red);
+} */
+
+section#Courses .nav-link{
+
+    /* color: white; */
+    /*bu beyazlaştırma işlemini text-light vererek te yapabilirdik:text-light/white ve btn-danger verebilirdik*/
+}
+
+footer i{
+
+    font-size: 2rem;
+    color: white;
+    margin-right: 0.8rem;
+    transition: color 1s;
+
+}
+
+footer i:hover{
+
+    color: var(--red);
+}
+
+.btn-up{
+
+    position: fixed;
+    bottom:1rem;
+    right: 1rem;
+    color: white;
+    background-color: var(--red);
+    width: 50px;/*kare için bunu verdik*/
+    height: 50px;/*kare için bunu verdik*/
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.btn-up i:hover{
+
+    color: black;
+    font-weight: 700;
+}
+
+.btn-up:hover i{
+
+    transform: scale(30px);
+}
